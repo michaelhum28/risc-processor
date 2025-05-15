@@ -1,0 +1,373 @@
+C:/Users/kaifa/Desktop/222/CEG3156-Computer-Systems-Design/Lab2/VHDL/mux4to1_8Bit.vhd {1 {vcom -work work -2002 -explicit C:/Users/kaifa/Desktop/222/CEG3156-Computer-Systems-Design/Lab2/VHDL/mux4to1_8Bit.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity mux4to1_8Bit
+-- Compiling architecture structural of mux4to1_8Bit
+-- Loading entity mux4to1_1Bit
+
+} {} {}} C:/Users/kaifa/Desktop/222/CEG3156-Computer-Systems-Design/Lab2/VHDL/carryLookaheadAdder8Bit.vhd {1 {vcom -work work -2002 -explicit C:/Users/kaifa/Desktop/222/CEG3156-Computer-Systems-Design/Lab2/VHDL/carryLookaheadAdder8Bit.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity carryLookaheadAdder8Bit
+-- Compiling architecture structural of carryLookaheadAdder8Bit
+
+} {} {}} C:/Users/kaifa/Desktop/222/CEG3156-Computer-Systems-Design/Lab2/VHDL/CU.vhd {1 {vcom -work work -2002 -explicit C:/Users/kaifa/Desktop/222/CEG3156-Computer-Systems-Design/Lab2/VHDL/CU.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity CU
+-- Compiling architecture structural of CU
+
+} {} {}} C:/Users/kaifa/Desktop/222/CEG3156-Computer-Systems-Design/Lab2/VHDL/IMEM_2.vhd {1 {vcom -work work -2002 -explicit {C:\Users\kaifa\Desktop\222\CEG3156-Computer-Systems-Design\Lab2\VHDL\IMEM_2.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_textio
+-- Compiling entity IMEM_2
+-- Compiling architecture Behavioral of IMEM_2
+
+} {} {}} C:/Users/kaifa/Desktop/222/CEG3156-Computer-Systems-Design/Lab2/VHDL/register32Bit.vhd {1 {vcom -work work -2002 -explicit C:/Users/kaifa/Desktop/222/CEG3156-Computer-Systems-Design/Lab2/VHDL/register32Bit.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity register32Bit
+-- Compiling architecture structural of register32Bit
+
+} {} {}} C:/Users/kaifa/Desktop/222/CEG3156-Computer-Systems-Design/Lab2/VHDL/mux4to1_1Bit.vhd {1 {vcom -work work -2002 -explicit C:/Users/kaifa/Desktop/222/CEG3156-Computer-Systems-Design/Lab2/VHDL/mux4to1_1Bit.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity mux4to1_1Bit
+-- Compiling architecture structural of mux4to1_1Bit
+
+} {} {}} C:/Users/kaifa/Desktop/222/CEG3156-Computer-Systems-Design/Lab2/VHDL/ALU.vhd {0 {vcom -work work -2002 -explicit C:/Users/kaifa/Desktop/222/CEG3156-Computer-Systems-Design/Lab2/VHDL/ALU.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity ALU
+-- Compiling architecture structural of ALU
+** Error: (vcom-11) Could not find work.comparator8bit.
+
+** Error: C:/Users/kaifa/Desktop/222/CEG3156-Computer-Systems-Design/Lab2/VHDL/ALU.vhd(27): (vcom-1195) Cannot find expanded name "work.comparator8Bit".
+
+** Error: C:/Users/kaifa/Desktop/222/CEG3156-Computer-Systems-Design/Lab2/VHDL/ALU.vhd(27): Unknown expanded name.
+-- Loading entity adderSubtractor8Bit
+** Error: (vcom-11) Could not find work.mux8to1_8bit.
+
+** Error: C:/Users/kaifa/Desktop/222/CEG3156-Computer-Systems-Design/Lab2/VHDL/ALU.vhd(46): (vcom-1195) Cannot find expanded name "work.mux8to1_8Bit".
+
+** Error: C:/Users/kaifa/Desktop/222/CEG3156-Computer-Systems-Design/Lab2/VHDL/ALU.vhd(46): Unknown expanded name.
+** Error: C:/Users/kaifa/Desktop/222/CEG3156-Computer-Systems-Design/Lab2/VHDL/ALU.vhd(62): VHDL Compiler exiting
+
+} {8.0 9.0 10.0 11.0 12.0 13.0 14.0 15.0 16.0 17.0 18.0 20.0} {}} C:/Users/kaifa/Desktop/222/CEG3156-Computer-Systems-Design/Lab2/VHDL/mux2to1_32bit.vhd {1 {vcom -work work -2002 -explicit C:/Users/kaifa/Desktop/222/CEG3156-Computer-Systems-Design/Lab2/VHDL/mux2to1_32bit.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity mux2to1_32bit
+-- Compiling architecture struct of mux2to1_32bit
+
+} {} {}} C:/Users/kaifa/Desktop/222/CEG3156-Computer-Systems-Design/Lab2/VHDL/mux2to1_5bit.vhd {1 {vcom -work work -2002 -explicit C:/Users/kaifa/Desktop/222/CEG3156-Computer-Systems-Design/Lab2/VHDL/mux2to1_5bit.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity mux2to1_5bit
+-- Compiling architecture struct of mux2to1_5bit
+
+} {} {}} C:/Users/kaifa/Desktop/222/CEG3156-Computer-Systems-Design/Lab2/VHDL/clockDivider.vhd {0 {vcom -work work -2002 -explicit C:/Users/kaifa/Desktop/222/CEG3156-Computer-Systems-Design/Lab2/VHDL/clockDivider.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity clockDivider
+-- Compiling architecture structural of clockDivider
+** Error: (vcom-11) Could not find work.enardff_2.
+
+** Error: C:/Users/kaifa/Desktop/222/CEG3156-Computer-Systems-Design/Lab2/VHDL/clockDivider.vhd(26): (vcom-1195) Cannot find expanded name "work.enARdFF_2".
+
+** Error: C:/Users/kaifa/Desktop/222/CEG3156-Computer-Systems-Design/Lab2/VHDL/clockDivider.vhd(26): Unknown expanded name.
+** Error: (vcom-11) Could not find work.enardff_2.
+
+** Error: C:/Users/kaifa/Desktop/222/CEG3156-Computer-Systems-Design/Lab2/VHDL/clockDivider.vhd(36): (vcom-1195) Cannot find expanded name "work.enARdFF_2".
+
+** Error: C:/Users/kaifa/Desktop/222/CEG3156-Computer-Systems-Design/Lab2/VHDL/clockDivider.vhd(36): Unknown expanded name.
+** Error: (vcom-11) Could not find work.enardff_2.
+
+** Error: C:/Users/kaifa/Desktop/222/CEG3156-Computer-Systems-Design/Lab2/VHDL/clockDivider.vhd(46): (vcom-1195) Cannot find expanded name "work.enARdFF_2".
+
+** Error: C:/Users/kaifa/Desktop/222/CEG3156-Computer-Systems-Design/Lab2/VHDL/clockDivider.vhd(46): Unknown expanded name.
+** Error: (vcom-11) Could not find work.enardff_2.
+
+** Error: C:/Users/kaifa/Desktop/222/CEG3156-Computer-Systems-Design/Lab2/VHDL/clockDivider.vhd(55): (vcom-1195) Cannot find expanded name "work.enARdFF_2".
+
+** Error: C:/Users/kaifa/Desktop/222/CEG3156-Computer-Systems-Design/Lab2/VHDL/clockDivider.vhd(55): Unknown expanded name.
+** Error: (vcom-11) Could not find work.enardff_2.
+
+** Error: C:/Users/kaifa/Desktop/222/CEG3156-Computer-Systems-Design/Lab2/VHDL/clockDivider.vhd(64): (vcom-1195) Cannot find expanded name "work.enARdFF_2".
+
+** Error: C:/Users/kaifa/Desktop/222/CEG3156-Computer-Systems-Design/Lab2/VHDL/clockDivider.vhd(64): Unknown expanded name.
+** Error: (vcom-11) Could not find work.enardff_2.
+
+** Error: C:/Users/kaifa/Desktop/222/CEG3156-Computer-Systems-Design/Lab2/VHDL/clockDivider.vhd(73): (vcom-1195) Cannot find expanded name "work.enARdFF_2".
+
+** Error: C:/Users/kaifa/Desktop/222/CEG3156-Computer-Systems-Design/Lab2/VHDL/clockDivider.vhd(73): Unknown expanded name.
+** Error: (vcom-11) Could not find work.enardff_2.
+
+** Error: C:/Users/kaifa/Desktop/222/CEG3156-Computer-Systems-Design/Lab2/VHDL/clockDivider.vhd(82): (vcom-1195) Cannot find expanded name "work.enARdFF_2".
+
+** Error: C:/Users/kaifa/Desktop/222/CEG3156-Computer-Systems-Design/Lab2/VHDL/clockDivider.vhd(82): Unknown expanded name.
+** Error: (vcom-11) Could not find work.enardff_2.
+
+** Error: C:/Users/kaifa/Desktop/222/CEG3156-Computer-Systems-Design/Lab2/VHDL/clockDivider.vhd(92): (vcom-1195) Cannot find expanded name "work.enARdFF_2".
+
+** Error: C:/Users/kaifa/Desktop/222/CEG3156-Computer-Systems-Design/Lab2/VHDL/clockDivider.vhd(92): Unknown expanded name.
+** Error: C:/Users/kaifa/Desktop/222/CEG3156-Computer-Systems-Design/Lab2/VHDL/clockDivider.vhd(101): VHDL Compiler exiting
+
+} {8.0 9.0 10.0 11.0 12.0 14.0 15.0 16.0 17.0 19.0 20.0 21.0 22.0 24.0 25.0 26.0 27.0 29.0 30.0 31.0 32.0 34.0 35.0 36.0 37.0 39.0 40.0 41.0 42.0 44.0 45.0 46.0 47.0 49.0} {}} C:/Users/kaifa/Desktop/222/CEG3156-Computer-Systems-Design/Lab2/VHDL/decoder5to32.vhd {1 {vcom -work work -2002 -explicit C:/Users/kaifa/Desktop/222/CEG3156-Computer-Systems-Design/Lab2/VHDL/decoder5to32.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity decoder5to32
+-- Compiling architecture Structural of decoder5to32
+
+} {} {}} C:/Users/kaifa/Desktop/222/CEG3156-Computer-Systems-Design/Lab2/VHDL/mux8to1_8Bit.vhd {1 {vcom -work work -2002 -explicit C:/Users/kaifa/Desktop/222/CEG3156-Computer-Systems-Design/Lab2/VHDL/mux8to1_8Bit.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity mux8to1_8Bit
+-- Compiling architecture structural of mux8to1_8Bit
+
+} {} {}} C:/Users/kaifa/Desktop/222/CEG3156-Computer-Systems-Design/Lab2/VHDL/mux8to1_1Bit.vhd {1 {vcom -work work -2002 -explicit C:/Users/kaifa/Desktop/222/CEG3156-Computer-Systems-Design/Lab2/VHDL/mux8to1_1Bit.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity mux8to1_1Bit
+-- Compiling architecture structural of mux8to1_1Bit
+-- Loading entity mux2to1_1Bit
+-- Loading entity mux4to1_1Bit
+
+} {} {}} C:/Users/kaifa/Desktop/222/CEG3156-Computer-Systems-Design/Lab2/VHDL/IMEM.vhd {1 {vcom -work work -2002 -explicit C:/Users/kaifa/Desktop/222/CEG3156-Computer-Systems-Design/Lab2/VHDL/IMEM.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity IMEM
+-- Compiling architecture SYN of imem
+
+} {} {}} C:/Users/kaifa/Desktop/222/CEG3156-Computer-Systems-Design/Lab2/VHDL/adderSubtractor8Bit.vhd {0 {vcom -work work -2002 -explicit C:/Users/kaifa/Desktop/222/CEG3156-Computer-Systems-Design/Lab2/VHDL/adderSubtractor8Bit.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity adderSubtractor8Bit
+-- Compiling architecture structural of adderSubtractor8Bit
+** Error: (vcom-11) Could not find work.carrylookaheadadder8bit.
+
+** Error: C:/Users/kaifa/Desktop/222/CEG3156-Computer-Systems-Design/Lab2/VHDL/adderSubtractor8Bit.vhd(24): (vcom-1195) Cannot find expanded name "work.carryLookaheadAdder8Bit".
+
+** Error: C:/Users/kaifa/Desktop/222/CEG3156-Computer-Systems-Design/Lab2/VHDL/adderSubtractor8Bit.vhd(24): Unknown expanded name.
+** Error: C:/Users/kaifa/Desktop/222/CEG3156-Computer-Systems-Design/Lab2/VHDL/adderSubtractor8Bit.vhd(33): VHDL Compiler exiting
+
+} {8.0 9.0 10.0 11.0 12.0 14.0} {}} C:/Users/kaifa/Desktop/222/CEG3156-Computer-Systems-Design/Lab2/VHDL/ALU_CU_G1.vhd {1 {vcom -work work -2002 -explicit C:/Users/kaifa/Desktop/222/CEG3156-Computer-Systems-Design/Lab2/VHDL/ALU_CU_G1.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity ALU_CU_G1
+-- Compiling architecture struct of ALU_CU_G1
+
+} {} {}} C:/Users/kaifa/Desktop/222/CEG3156-Computer-Systems-Design/Lab2/VHDL/DMEM_2_tb.vhd {1 {vcom -work work -2002 -explicit {C:\Users\kaifa\Desktop\222\CEG3156-Computer-Systems-Design\Lab2\VHDL\DMEM_2_tb.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity DMEM_2_TB
+-- Compiling architecture Behavioral of DMEM_2_TB
+-- Loading package std_logic_textio
+-- Loading entity DMEM_2
+
+} {} {}} C:/Users/kaifa/Desktop/222/CEG3156-Computer-Systems-Design/Lab2/VHDL/mux32to1_8Bit.vhd {1 {vcom -work work -2002 -explicit C:/Users/kaifa/Desktop/222/CEG3156-Computer-Systems-Design/Lab2/VHDL/mux32to1_8Bit.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity mux32to1_8Bit
+-- Compiling architecture structural of mux32to1_8Bit
+-- Loading entity mux4to1_8Bit
+-- Loading entity mux8to1_8Bit
+
+} {} {}} C:/Users/kaifa/Desktop/222/CEG3156-Computer-Systems-Design/Lab2/VHDL/RegisterFile_tb.vhd {1 {vcom -work work -2002 -explicit {C:\Users\kaifa\Desktop\222\CEG3156-Computer-Systems-Design\Lab2\VHDL\RegisterFile_tb.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity registerFile_tb
+-- Compiling architecture test of registerFile_tb
+
+} {} {}} C:/Users/kaifa/Desktop/222/CEG3156-Computer-Systems-Design/Lab2/VHDL/DMEM.vhd {1 {vcom -work work -2002 -explicit C:/Users/kaifa/Desktop/222/CEG3156-Computer-Systems-Design/Lab2/VHDL/DMEM.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity DMEM
+-- Compiling architecture SYN of dmem
+
+} {} {}} C:/Users/kaifa/Desktop/222/CEG3156-Computer-Systems-Design/Lab2/VHDL/register8Bit.vhd {1 {vcom -work work -2002 -explicit C:/Users/kaifa/Desktop/222/CEG3156-Computer-Systems-Design/Lab2/VHDL/register8Bit.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity register8Bit
+-- Compiling architecture Structural of register8Bit
+
+} {} {}} C:/Users/kaifa/Desktop/222/CEG3156-Computer-Systems-Design/Lab2/VHDL/Lab2TopLevel.vhd {0 {vcom -work work -2002 -explicit {C:\Users\kaifa\Desktop\222\CEG3156-Computer-Systems-Design\Lab2\VHDL\Lab2TopLevel.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity TopLevel
+-- Compiling architecture structural of TopLevel
+** Error: (vcom-11) Could not find work.register8bit.
+
+** Error: C:\Users\kaifa\Desktop\222\CEG3156-Computer-Systems-Design\Lab2\VHDL\Lab2TopLevel.vhd(46): (vcom-1195) Cannot find expanded name "work.register8Bit".
+
+** Error: C:\Users\kaifa\Desktop\222\CEG3156-Computer-Systems-Design\Lab2\VHDL\Lab2TopLevel.vhd(46): Unknown expanded name.
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_textio
+-- Loading entity IMEM_2
+-- Loading entity CU
+** Error: (vcom-11) Could not find work.registerfile.
+
+** Error: C:\Users\kaifa\Desktop\222\CEG3156-Computer-Systems-Design\Lab2\VHDL\Lab2TopLevel.vhd(97): (vcom-1195) Cannot find expanded name "work.registerFile".
+
+** Error: C:\Users\kaifa\Desktop\222\CEG3156-Computer-Systems-Design\Lab2\VHDL\Lab2TopLevel.vhd(97): Unknown expanded name.
+-- Loading entity ALU_32b_G1
+-- Loading entity ALU_CU_G1
+-- Loading entity ALU
+** Error: (vcom-11) Could not find work.mux2to1_32bit.
+
+** Error: C:\Users\kaifa\Desktop\222\CEG3156-Computer-Systems-Design\Lab2\VHDL\Lab2TopLevel.vhd(156): (vcom-1195) Cannot find expanded name "work.mux2to1_32bit".
+
+** Error: C:\Users\kaifa\Desktop\222\CEG3156-Computer-Systems-Design\Lab2\VHDL\Lab2TopLevel.vhd(156): Unknown expanded name.
+** Error: (vcom-11) Could not find work.mux2to1_32bit.
+
+** Error: C:\Users\kaifa\Desktop\222\CEG3156-Computer-Systems-Design\Lab2\VHDL\Lab2TopLevel.vhd(159): (vcom-1195) Cannot find expanded name "work.mux2to1_32bit".
+
+** Error: C:\Users\kaifa\Desktop\222\CEG3156-Computer-Systems-Design\Lab2\VHDL\Lab2TopLevel.vhd(159): Unknown expanded name.
+** Error: (vcom-11) Could not find work.mux2to1_5bit.
+
+** Error: C:\Users\kaifa\Desktop\222\CEG3156-Computer-Systems-Design\Lab2\VHDL\Lab2TopLevel.vhd(162): (vcom-1195) Cannot find expanded name "work.mux2to1_5bit".
+
+** Error: C:\Users\kaifa\Desktop\222\CEG3156-Computer-Systems-Design\Lab2\VHDL\Lab2TopLevel.vhd(162): Unknown expanded name.
+** Error: (vcom-11) Could not find work.mux2to1_8bit.
+
+** Error: C:\Users\kaifa\Desktop\222\CEG3156-Computer-Systems-Design\Lab2\VHDL\Lab2TopLevel.vhd(165): (vcom-1195) Cannot find expanded name "work.mux2to1_8bit".
+
+** Error: C:\Users\kaifa\Desktop\222\CEG3156-Computer-Systems-Design\Lab2\VHDL\Lab2TopLevel.vhd(165): Unknown expanded name.
+** Error: (vcom-11) Could not find work.mux2to1_8bit.
+
+** Error: C:\Users\kaifa\Desktop\222\CEG3156-Computer-Systems-Design\Lab2\VHDL\Lab2TopLevel.vhd(168): (vcom-1195) Cannot find expanded name "work.mux2to1_8bit".
+
+** Error: C:\Users\kaifa\Desktop\222\CEG3156-Computer-Systems-Design\Lab2\VHDL\Lab2TopLevel.vhd(168): Unknown expanded name.
+** Error: (vcom-11) Could not find work.mux8to1_8bit.
+
+** Error: C:\Users\kaifa\Desktop\222\CEG3156-Computer-Systems-Design\Lab2\VHDL\Lab2TopLevel.vhd(174): (vcom-1195) Cannot find expanded name "work.mux8to1_8bit".
+
+** Error: C:\Users\kaifa\Desktop\222\CEG3156-Computer-Systems-Design\Lab2\VHDL\Lab2TopLevel.vhd(174): Unknown expanded name.
+** Error: C:\Users\kaifa\Desktop\222\CEG3156-Computer-Systems-Design\Lab2\VHDL\Lab2TopLevel.vhd(205): VHDL Compiler exiting
+
+} {8.0 9.0 10.0 11.0 12.0 13.0 17.0 18.0 19.0 20.0 21.0 22.0 25.0 26.0 27.0 28.0 29.0 31.0 32.0 33.0 34.0 36.0 37.0 38.0 39.0 41.0 42.0 43.0 44.0 46.0 47.0 48.0 49.0 51.0 52.0 53.0 54.0 56.0} {}} C:/Users/kaifa/Desktop/222/CEG3156-Computer-Systems-Design/Lab2/VHDL/registerFile.vhd {1 {vcom -work work -2002 -explicit C:/Users/kaifa/Desktop/222/CEG3156-Computer-Systems-Design/Lab2/VHDL/registerFile.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity registerFile
+-- Compiling architecture structural of registerFile
+-- Loading entity decoder5to32
+-- Loading entity register8Bit
+-- Loading entity mux32to1_8Bit
+
+} {} {}} C:/Users/kaifa/Desktop/222/CEG3156-Computer-Systems-Design/Lab2/VHDL/IMEM_tb.vhd {1 {vcom -work work -2002 -explicit {C:\Users\kaifa\Desktop\222\CEG3156-Computer-Systems-Design\Lab2\VHDL\IMEM_tb.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity IMEM_2_tb
+-- Compiling architecture behavior of IMEM_2_tb
+
+} {} {}} C:/Users/kaifa/Desktop/222/CEG3156-Computer-Systems-Design/Lab2/VHDL/mux2to1_8bit.vhd {1 {vcom -work work -2002 -explicit C:/Users/kaifa/Desktop/222/CEG3156-Computer-Systems-Design/Lab2/VHDL/mux2to1_8bit.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity mux2to1_8Bit
+-- Compiling architecture structural of mux2to1_8Bit
+-- Loading entity mux2to1_1Bit
+
+} {} {}} C:/Users/kaifa/Desktop/222/CEG3156-Computer-Systems-Design/Lab2/VHDL/FA_G1.vhd {1 {vcom -work work -2002 -explicit C:/Users/kaifa/Desktop/222/CEG3156-Computer-Systems-Design/Lab2/VHDL/FA_G1.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity FA_G1
+-- Compiling architecture structural of FA_G1
+
+} {} {}} C:/Users/kaifa/Desktop/222/CEG3156-Computer-Systems-Design/Lab2/VHDL/mux2to1_1Bit.vhd {1 {vcom -work work -2002 -explicit C:/Users/kaifa/Desktop/222/CEG3156-Computer-Systems-Design/Lab2/VHDL/mux2to1_1Bit.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity mux2to1_1Bit
+-- Compiling architecture structural of mux2to1_1Bit
+
+} {} {}} C:/Users/kaifa/Desktop/222/CEG3156-Computer-Systems-Design/Lab2/VHDL/ALU_32b_G1.vhd {0 {vcom -work work -2002 -explicit C:/Users/kaifa/Desktop/222/CEG3156-Computer-Systems-Design/Lab2/VHDL/ALU_32b_G1.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity ALU_32b_G1
+-- Compiling architecture struct of ALU_32b_G1
+** Error: (vcom-11) Could not find work.fa_g1.
+
+** Error: C:/Users/kaifa/Desktop/222/CEG3156-Computer-Systems-Design/Lab2/VHDL/ALU_32b_G1.vhd(19): (vcom-1195) Cannot find expanded name "work.FA_G1".
+
+** Error: C:/Users/kaifa/Desktop/222/CEG3156-Computer-Systems-Design/Lab2/VHDL/ALU_32b_G1.vhd(19): Unknown expanded name.
+** Error: C:/Users/kaifa/Desktop/222/CEG3156-Computer-Systems-Design/Lab2/VHDL/ALU_32b_G1.vhd(30): VHDL Compiler exiting
+
+} {8.0 9.0 10.0 11.0 12.0 14.0} {}} C:/Users/kaifa/Desktop/222/CEG3156-Computer-Systems-Design/Lab2/VHDL/comparator8Bit.vhd {1 {vcom -work work -2002 -explicit C:/Users/kaifa/Desktop/222/CEG3156-Computer-Systems-Design/Lab2/VHDL/comparator8Bit.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity comparator8Bit
+-- Compiling architecture structural of comparator8Bit
+
+} {} {}} C:/Users/kaifa/Desktop/222/CEG3156-Computer-Systems-Design/Lab2/VHDL/enARdFF_2.vhd {1 {vcom -work work -2002 -explicit C:/Users/kaifa/Desktop/222/CEG3156-Computer-Systems-Design/Lab2/VHDL/enARdFF_2.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity enARdFF_2
+-- Compiling architecture rtl of enARdFF_2
+
+} {} {}}

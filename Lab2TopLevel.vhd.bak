@@ -1,0 +1,216 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+use ieee.std_logic_unsigned.all;
+library 220model;
+use 220model.LPM_RAM_DQ;
+
+
+entity TopLevel is
+    port(
+        GClock, GReset : in std_logic;
+        ValueSelect : in std_logic_vector(2 downto 0);
+        MuxOut : out std_logic_vector(7 downto 0); --Mux Out debug
+        InstructionOut: out STD_LOGIC_VECTOR(31 downto 0); -- Instruction Out
+        BranchOut, ZeroOut, MemWriteOut, RegWriteOut: out std_logic;
+        ALUOut, ReadData1Out, ReadData2Out, WriteDataOut, ControlSignalOut: out STD_LOGIC_VECTOR(7 downto 0);
+        ReadReg1Out, ReadReg2Out, WriteRegOut: out STD_LOGIC_VECTOR(4 downto 0);
+        MemDataOut: out STD_LOGIC_VECTOR(7 downto 0)
+
+    );
+end entity;
+
+architecture structural of TopLevel is
+
+    signal OPCODE : STD_LOGIC_VECTOR(5 downto 0); -- Instruction OPCODE (Control Unit Input)
+    signal RegDst, Branch, Bne, MemRead, MemToReg, MemWrite, ALUSrc, RegWrite, Jump : STD_LOGIC; -- Control Unit Outputs
+    signal ALUOp : STD_LOGIC_VECTOR(1 downto 0); -- ALU Control Unit Input
+
+    signal B_Extend, B_Shift : STD_LOGIC_VECTOR(31 downto 0);
+    signal ALUControl : STD_LOGIC_VECTOR(2 downto 0); --ALU Control Unit Output
+    signal ALUBottomOut : STD_LOGIC_VECTOR(7 downto 0); -- ALU output
+    signal ZeroFlag : STD_LOGIC; -- ALU zeroflag
+
+    signal Instruction : STD_LOGIC_VECTOR(31 downto 0); -- Intruction Memory Output
+    signal ReadReg1, ReadReg2, WriteReg : STD_LOGIC_VECTOR(4 downto 0); -- Register File inputs
+    signal ReadData, ReadData1, ReadData2, WriteData, MUX1_8Out, DataMemOut : STD_LOGIC_VECTOR(7 downto 0); -- Register File outputs
+
+    signal PCIncrementOut, PCOut, ALU1Out, MUX1_32Out, PCIn, JumpAddress: STD_LOGIC_VECTOR(31 downto 0);
+begin
+--PC--------------------------------------------------------------------------------------------------------------------
+PC : entity work.register8Bit(structural)
+    port map (
+        i_clock => GClock,
+        i_reset => GReset,
+        i_load => '1',
+        i_Value => PCIn(7 downto 0),
+        o_Value => PCOut(7 downto 0)
+    );
+
+--Instruction Memory-----------------------------------------------------------------------------------------------------
+InstructionMemory : entity work.IMEM(SYN)
+    port map (
+        address => PCOut(7 downto 0),
+        clock => GClock,
+        q => Instruction
+    );
+
+JumpAddress(31 downto 28) <= PCIncrementOut(31 downto 28);
+JumpAddress(27 downto 2) <= Instruction(25 downto 0);
+JumpAddress(1 downto 0) <= "00";
+
+
+OPCODE <= Instruction(31 downto 26);
+ReadReg1 <= Instruction(25 downto 21);
+ReadReg2 <= Instruction(20 downto 16);
+
+
+B_Extend(15 downto 0) <= Instruction(15 downto 0);
+B_Extend(31 downto 16) <= (others => '0');
+B_Shift <= B_Extend(29 downto 0) & "00";
+
+
+--Control Unit------------------------------------------------------------------------------------------------------------
+ControlUnit : entity work.CU(structural)
+    port map (
+        OPCODE => OPCODE,
+        ALUSrc => ALUSrc,
+        RegDst => RegDst,
+        Branch => Branch,
+        Bne => Bne,
+        MemRead => MemRead,
+        MemToReg => MemToReg,
+        MemWrite => MemWrite,
+        RegWrite => RegWrite,
+        ALUOp => ALUOp,
+        Jump => Jump
+    );
+
+RegisterFile : entity work.registerFile(structural)
+    port map (
+        reset => GReset,
+        clk => GClock,
+        RegWrite => RegWrite,
+        ReadReg1 => ReadReg1,
+        ReadReg2 => ReadReg2,
+        WriteReg => WriteReg,
+        WriteData => WriteData,
+        ReadData1 => ReadData1,
+        ReadData2 => ReadData2
+    );
+
+
+
+--ALU--------------------------------------------------------------------------------------------------------------
+PCIncrementer : entity work.ALU_32b_G1(struct) --top left adder
+    port map (PCOut, X"00000001", PCIncrementOut);
+
+ALUAdder : entity work.ALU_32b_G1(struct) --top right alu
+    port map (PCIncrementOut, B_Shift, ALU1Out);
+
+
+ALUControlLogic : entity work.ALU_CU_G1(struct) -- ALU Control Logic
+port map (
+    F => Instruction(5 downto 0),
+    ALUOp => ALUOp,
+    OPCODE => ALUControl
+);
+
+ALUBottom : entity work.ALU(structural) -- ALU Bottom
+    port map (
+        A => ReadData1,
+        B => MUX1_8Out,
+        OPCODE => ALUControl,
+        ALUResult => ALUBottomOut,
+        Zero => ZeroFlag
+    );
+
+
+--Data Memory------------------------------------------------------------------------------------------------------
+-- DataMemory : entity work.DMEM(SYN) -- Data Memory
+--     port map (
+--         address	=> ALUBottomOut,
+-- 		clock  => GClock,
+-- 		data => ReadData2,
+-- 		rden => MemRead,
+-- 		wren => MemWrite,
+-- 		q => DataMemOut
+--     );
+
+ram_inst : entity 220model.LPM_RAM_DQ(LPM_SYN)
+    generic map (
+        LPM_WIDTH => 8,                  
+        LPM_WIDTHAD => 8,                
+        LPM_NUMWORDS => 256,             
+        LPM_INDATA => "REGISTERED",
+        LPM_ADDRESS_CONTROL => "REGISTERED",
+        LPM_OUTDATA => "REGISTERED",
+        LPM_FILE => "Data.mif",          
+        LPM_TYPE => "LPM_RAM_DQ",
+        USE_EAB => "ON",
+        INTENDED_DEVICE_FAMILY => "Cyclone IV E",  -- Change to your FPGA
+        LPM_HINT => "UNUSED"
+    )
+    port map (
+        DATA => ReadData2,
+        ADDRESS => ALUBottomOut,
+        INCLOCK => GClock,
+        OUTCLOCK=> GClock,  -- Remove if using async read
+        WE => MemWrite,
+        Q => data_out
+    );
+
+
+
+
+--MUX--------------------------------------------------------------------------------------------------------------
+MUX1_32B: entity work.mux2to1_32bit(struct) --top RIGHT GRAYED OUT 01, sel, out
+    port map(PCIncrementOut, ALU1Out, (Branch and ZeroFlag) or (Bne and not(ZeroFlag)), MUX1_32Out);
+
+MUX2_32B: entity work.mux2to1_32bit(struct) --top RIGHT BLACK 10, sel, out
+    port map(MUX1_32Out, JumpAddress, Jump, PCin);
+ 
+MUX1_5B:entity work.mux2to1_5bit(struct) --5 bit mux on the bottom left 01, sel, out
+    port map(Instruction(20 downto 16), Instruction(15 downto 11), RegDst, WriteReg);
+
+MUX1_8B:entity work.mux2to1_8bit(structural) --mux from Register File 01, out, sel
+    port map(ReadData2, B_Extend(7 downto 0), MUX1_8Out, ALUSrc);
+
+MUX2_8B:entity work.mux2to1_8bit(structural) --mux from data memory 10, out, sel
+    port map(ALUBottomOut, DataMemOut, WriteData, MemToReg);
+--------------------------------------------------------------------------------------------------------------
+
+
+--Debuging Outputs--------------------------------------------------------------------------------------------------------------
+DebugMUX : entity work.mux8to1_8bit(structural) -- Mux Out debug
+    port map (
+        sel => ValueSelect,
+        input0 => PCOut(7 downto 0),
+        input1 => ALUBottomOut,
+        input2 => ReadData1,
+        input3 => ReadData2,
+        input4 => WriteData,
+        input5 => '0' & RegDst & Jump & MemRead & MemToReg & ALUOp & ALUSrc,
+        input6 => X"FF",
+        input7 => X"FF",
+        output => MuxOut
+    );
+
+InstructionOut <= Instruction;
+BranchOut <= Branch;
+ZeroOut <= ZeroFlag;
+MemWriteOut <= MemWrite;
+RegWriteOut <= RegWrite;
+
+ALUOut <= ALUBottomOut;
+ReadData1Out <= ReadData1;
+ReadData2Out <= ReadData2;
+WriteDataOut <= WriteData;
+ControlSignalOut <= '0' & RegDst & Jump & MemRead & MemToReg & ALUOp & ALUSrc;
+
+ReadReg1Out <= ReadReg1;
+ReadReg2Out <= ReadReg2;
+WriteRegOut <= WriteReg;
+MemDataOut <= DataMemOut;
+
+end architecture;
